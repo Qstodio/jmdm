@@ -1,0 +1,743 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>J. M. de Martín. Referències, publicacions, dades</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+/* Override strong tags inside headings to maintain consistent weight */
+h1 strong,
+h2 strong,
+h3 strong {
+	font-weight: 600;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 10px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+
+	table.collection-content {
+		width: 100%;
+		table-layout: fixed;
+	}
+
+	table.collection-content th,
+	table.collection-content td {
+		overflow-wrap: anywhere;
+	}
+
+	table.collection-content td > .user,
+	table.collection-content td > time {
+		white-space: pre-wrap;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content-wrapper {
+	overflow-x: auto;
+}
+
+@media only print {
+	.collection-content-wrapper {
+		overflow-x: visible;
+	}
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.collection-content td {
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+.column-list {
+	display: flex;
+	gap: 46px;
+}
+
+.column {
+	min-width: 0;
+	overflow: hidden;
+}
+
+.column > *:first-child {
+	margin-top: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+table {
+	border-collapse: collapse;
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol.numbered-list.numbered-list-digits-2 {
+	padding-inline-start: 2em;
+}
+
+ol.numbered-list.numbered-list-digits-3plus {
+	padding-inline-start: 2.4em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.callout img.notion-static-icon {
+	width: 1em;
+	height: 1em;
+}
+
+.callout p {
+	margin: 0;
+}
+
+.callout h1,
+.callout h2,
+.callout h3 {
+	margin: 0 0 0.6rem;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+blockquote.quote-large {
+	font-size: 1.25em;
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.highlight-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.highlight-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.highlight-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.highlight-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.highlight-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.highlight-default_background {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray_background {
+	background: rgba(42, 28, 0, 0.07);
+}
+.highlight-brown_background {
+	background: rgba(139, 46, 0, 0.086);
+}
+.highlight-orange_background {
+	background: rgba(224, 101, 1, 0.129);
+}
+.highlight-yellow_background {
+	background: rgba(211, 168, 0, 0.137);
+}
+.highlight-teal_background {
+	background: rgba(0, 100, 45, 0.09);
+}
+.highlight-blue_background {
+	background: rgba(0, 124, 215, 0.094);
+}
+.highlight-purple_background {
+	background: rgba(102, 0, 178, 0.078);
+}
+.highlight-pink_background {
+	background: rgba(197, 0, 93, 0.086);
+}
+.highlight-red_background {
+	background: rgba(223, 22, 0, 0.094);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.block-color-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.block-color-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.block-color-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.block-color-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.block-color-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(240, 239, 237, 1);
+}
+.block-color-brown_background {
+	background: rgba(245, 237, 233, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 235, 222, 1);
+}
+.block-color-yellow_background {
+	background: rgba(249, 243, 220, 1);
+}
+.block-color-teal_background {
+	background: rgba(232, 241, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(229, 242, 252, 1);
+}
+.block-color-purple_background {
+	background: rgba(243, 235, 249, 1);
+}
+.block-color-pink_background {
+	background: rgba(250, 233, 241, 1);
+}
+.block-color-red_background {
+	background: rgba(252, 233, 231, 1);
+}
+.select-value-color-default { background-color: rgba(42, 28, 0, 0.07); }
+.select-value-color-gray { background-color: rgba(28, 19, 1, 0.11); }
+.select-value-color-brown { background-color: rgba(127, 51, 0, 0.156); }
+.select-value-color-orange { background-color: rgba(196, 88, 0, 0.203); }
+.select-value-color-yellow { background-color: rgba(209, 156, 0, 0.282); }
+.select-value-color-green { background-color: rgba(0, 96, 38, 0.156); }
+.select-value-color-blue { background-color: rgba(0, 118, 217, 0.203); }
+.select-value-color-purple { background-color: rgba(92, 0, 163, 0.141); }
+.select-value-color-pink { background-color: rgba(183, 0, 78, 0.152); }
+.select-value-color-red { background-color: rgba(206, 24, 0, 0.164); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="be357c44-82d2-4afa-91be-0e9310c527c7" class="page sans"><header><h1 class="page-title" dir="auto">J. M. de Martín. Referències, publicacions, dades</h1><p class="page-description" dir="auto"></p></header><div class="page-body"><div class="collection-content-wrapper"><table class="collection-content"><colgroup><col style="width:13.27287716405606%"/><col style="width:15.169002473206925%"/><col style="width:8.32646331409728%"/><col style="width:11.046990931574609%"/><col style="width:8.32646331409728%"/><col style="width:10.882110469909316%"/><col style="width:16.488046166529266%"/><col style="width:16.488046166529244%"/></colgroup><thead><tr><th><span class="icon property-icon"><img src="https://app.notion.com/icons/crayon_gray.svg" style="width:14px;height:14px;display:block"/></span>Autor </th><th><span class="icon property-icon"><img src="https://app.notion.com/icons/bookmark_gray.svg" style="width:14px;height:14px;display:block"/></span>Títol</th><th><span class="icon property-icon"><img src="https://app.notion.com/icons/description_gray.svg" style="width:14px;height:14px;display:block"/></span>Data</th><th><span class="icon property-icon"><img src="https://app.notion.com/icons/book_gray.svg" style="width:14px;height:14px;display:block"/></span>Publicació</th><th><span class="icon property-icon"><img src="https://app.notion.com/icons/list_gray.svg" style="width:14px;height:14px;display:block"/></span>Tags</th><th><span class="icon property-icon"><img src="https://app.notion.com/icons/log-in_gray.svg" style="width:14px;height:14px;display:block"/></span>+ Info</th><th><span class="icon property-icon"><img src="https://app.notion.com/icons/attachment_gray.svg" style="width:14px;height:14px;display:block"/></span>Files &amp; media</th><th><span class="icon property-icon"><img src="https://app.notion.com/icons/attachment_gray.svg" style="width:14px;height:14px;display:block"/></span>Arxiu</th></tr></thead><tbody><tr id="1ed6daaa-28ac-4bc0-b2a3-411c152ed02b"><td class="cell-title"><a href="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/Yagoc%C3%A9s%201ed6daaa28ac4bc0b2a3411c152ed02b.html">Yagocés</a></td><td class="cell-kOCO">-</td><td class="cell-n?j:">1950/3/11</td><td class="cell-?HyX">Noticiero Universal</td><td class="cell-U?h_"><span class="selected-value select-value-color-pink">Premsa</span></td><td class="cell-wp[H">Petita nota sobre la primera exposició a la Sala Argos</td><td class="cell-STAj"><span style="margin-inline-end:6px"><a href="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/Yagoc%C3%A9s/Captura_de_Pantalla_2024-02-03_a_les_23.49.55.png"><img style="width:20px;max-height:24px" src="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/Yagoc%C3%A9s/Captura_de_Pantalla_2024-02-03_a_les_23.49.55.png" alt="Captura de Pantalla 2024-02-03 a les 23.49.55.png"/></a></span></td><td class="cell-B&gt;Qq"></td></tr><tr id="0e80db2a-87b9-4c37-b319-2bea075144e6"><td class="cell-title"><a href="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/Interino%200e80db2a87b94c37b3192bea075144e6.html">Interino</a></td><td class="cell-kOCO">Las exposiciones y los artistas: José Mº de Martín</td><td class="cell-n?j:">1950/4/11</td><td class="cell-?HyX">Destino</td><td class="cell-U?h_"><span class="selected-value select-value-color-pink">Premsa</span></td><td class="cell-wp[H">Nota sobre la primera exposició a la Sala Argos</td><td class="cell-STAj"><span style="margin-inline-end:6px"><a href="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/Interino/Destino_691_(4_nov._1950).pdf">Destino 691 (4 nov. 1950).pdf</a></span></td><td class="cell-B&gt;Qq"></td></tr><tr id="0853fdf7-73ef-44d1-8f88-d04efc55a180"><td class="cell-title"><a href="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/Carlos%20Antonio%20Arean%200853fdf773ef44d18f88d04efc55a180.html">Carlos Antonio Arean</a></td><td class="cell-kOCO">La escuela pictórica barcelonesa</td><td class="cell-n?j:">1951</td><td class="cell-?HyX">1951, Ediciones Españolas, p. 50</td><td class="cell-U?h_"><span class="selected-value select-value-color-green">Llibre</span></td><td class="cell-wp[H"></td><td class="cell-STAj"><span style="margin-inline-end:6px"><a href="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/Carlos%20Antonio%20Arean/IMG_0134.jpg"><img style="width:20px;max-height:24px" src="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/Carlos%20Antonio%20Arean/IMG_0134.jpg" alt="IMG_0134.jpg"/></a></span></td><td class="cell-B&gt;Qq"></td></tr><tr id="44fbc0c8-6c10-46bd-a72d-ac124f94d53a"><td class="cell-title"><a href="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/Juan%20Cort%C3%A9s%2044fbc0c86c1046bda72dac124f94d53a.html">Juan Cortés</a></td><td class="cell-kOCO">J.M. de Martín</td><td class="cell-n?j:">1952/12/27</td><td class="cell-?HyX">Destino</td><td class="cell-U?h_"><span class="selected-value select-value-color-pink">Premsa</span></td><td class="cell-wp[H"></td><td class="cell-STAj"><span style="margin-inline-end:6px"><a href="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/Juan%20Cort%C3%A9s/Destino_803_(27_dic._1952).jpg"><img style="width:20px;max-height:24px" src="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/Juan%20Cort%C3%A9s/Destino_803_(27_dic._1952).jpg" alt="Destino 803 (27 dic. 1952).jpg"/></a></span></td><td class="cell-B&gt;Qq"></td></tr><tr id="360d1d51-046d-80ad-8d6c-f838e814b107"><td class="cell-title"><a href="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/Gabriel%20Ferrater%20360d1d51046d80ad8d6cf838e814b107.html">Gabriel Ferrater</a></td><td class="cell-kOCO">La pintura de José Maria de Martín</td><td class="cell-n?j:">1953 </td><td class="cell-?HyX">Laye n. 22 (febrer-març) i 23 (abril-juny ) de 1953.</td><td class="cell-U?h_"><span class="selected-value select-value-color-pink">Premsa</span></td><td class="cell-wp[H">Gabriel Ferrater publica per primer cop el text La pintura de José María de Martín, a la revista  Es publicarà de nou, complert en una separata.</td><td class="cell-STAj"><span style="margin-inline-end:6px"><a href="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/Gabriel%20Ferrater/La_pintura_de_JMDM_Gabriel_Ferrater_LAYE_1953.pdf">La pintura de JMDM Gabriel Ferrater, LAYE 1953.pdf</a></span></td><td class="cell-B&gt;Qq"></td></tr><tr id="b1580e30-9c76-4aa1-9442-a2e7a82efc16"><td class="cell-title"><a href="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/Jorge%20Benet%20Aurell%20b1580e309c764aa19442a2e7a82efc16.html">Jorge Benet Aurell</a></td><td class="cell-kOCO">Exposiciones</td><td class="cell-n?j:">1953</td><td class="cell-?HyX">Revista. Semanario de Información de Artes y Letras</td><td class="cell-U?h_"><span class="selected-value select-value-color-pink">Premsa</span></td><td class="cell-wp[H"></td><td class="cell-STAj"><span style="margin-inline-end:6px"><a href="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/Jorge%20Benet%20Aurell/Captura_de_Pantalla_2024-02-04_a_les_18.16.20.png"><img style="width:20px;max-height:24px" src="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/Jorge%20Benet%20Aurell/Captura_de_Pantalla_2024-02-04_a_les_18.16.20.png" alt="Captura de Pantalla 2024-02-04 a les 18.16.20.png"/></a></span></td><td class="cell-B&gt;Qq"></td></tr><tr id="7af834ea-87b3-408b-9c33-eb5842577103"><td class="cell-title"><a href="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/Ces%C3%A1reo%20Rodr%C3%ADguez%20Aguilera%207af834ea87b3408b9c33eb5842577103.html">Cesáreo Rodríguez Aguilera</a></td><td class="cell-kOCO">Dialogos de arte: José María de Martín.</td><td class="cell-n?j:">1953/3/25</td><td class="cell-?HyX">Revista. N. 63 p.9</td><td class="cell-U?h_"><span class="selected-value select-value-color-pink">Premsa</span></td><td class="cell-wp[H"></td><td class="cell-STAj"><span style="margin-inline-end:6px"><a href="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/Ces%C3%A1reo%20Rodr%C3%ADguez%20Aguilera/IMG_4263.jpg"><img style="width:20px;max-height:24px" src="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/Ces%C3%A1reo%20Rodr%C3%ADguez%20Aguilera/IMG_4263.jpg" alt="IMG_4263.JPG"/></a></span></td><td class="cell-B&gt;Qq"></td></tr><tr id="90da5631-d72c-443b-b2bb-35bceeedb44a"><td class="cell-title"><a href="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/Sebasti%C3%A0%20Gasch%20(Mylos)%2090da5631d72c443bb2bb35bceeedb44a.html">Sebastià Gasch (Mylos)</a></td><td class="cell-kOCO">En el taller de los artistas. Con José Maria de Martín.</td><td class="cell-n?j:">1954/12/25</td><td class="cell-?HyX">Destino</td><td class="cell-U?h_"><span class="selected-value select-value-color-purple">Entrevista</span><span class="selected-value select-value-color-pink">Premsa</span></td><td class="cell-wp[H">Mylos era el pseudònim de Sebastià Gasch</td><td class="cell-STAj"><span style="margin-inline-end:6px"><a href="https://arca.bnc.cat/arcabib_pro/ca/catalogo_imagenes/grupo.do?path=1338323">https://arca.bnc.cat/arcabib_pro/ca/catalogo_imagenes/grupo.do?path=1338323</a></span><span style="margin-inline-end:6px"><a href="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/Sebasti%C3%A0%20Gasch%20(Mylos)/Captura_de_Pantalla_2024-02-03_a_les_23.34.50.png"><img style="width:20px;max-height:24px" src="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/Sebasti%C3%A0%20Gasch%20(Mylos)/Captura_de_Pantalla_2024-02-03_a_les_23.34.50.png" alt="Captura de Pantalla 2024-02-03 a les 23.34.50.png"/></a></span></td><td class="cell-B&gt;Qq"></td></tr><tr id="06823d3b-39d0-4405-8cab-037c9a877200"><td class="cell-title"><a href="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/R%20A%2006823d3b39d044058cab037c9a877200.html">R.A. </a></td><td class="cell-kOCO">Jose María de Martín</td><td class="cell-n?j:">1955/2/19</td><td class="cell-?HyX">Destino</td><td class="cell-U?h_"><span class="selected-value select-value-color-pink">Premsa</span></td><td class="cell-wp[H">Podria tractar-se de Lluís Ripoll Arbós?</td><td class="cell-STAj"><span style="margin-inline-end:6px"><a href="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/R%20A/Destino_19021955_RA_JMDM.png"><img style="width:20px;max-height:24px" src="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/R%20A/Destino_19021955_RA_JMDM.png" alt="Destino, 19:02:1955 RA JMDM.png"/></a></span></td><td class="cell-B&gt;Qq"></td></tr><tr id="75439606-2787-485c-a32f-49866fbe0171"><td class="cell-title"><a href="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/Sebasti%C3%A0%20Gasch%20754396062787485ca32f49866fbe0171.html">Sebastià Gasch</a></td><td class="cell-kOCO">La pintura rigurosa de José Maria de Martín</td><td class="cell-n?j:">1957/1/12</td><td class="cell-?HyX">Índice de Artes y letras n. 87</td><td class="cell-U?h_"><span class="selected-value select-value-color-pink">Premsa</span></td><td class="cell-wp[H"></td><td class="cell-STAj"><span style="margin-inline-end:6px"><a href="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/Sebasti%C3%A0%20Gasch/IMG_5869.jpg"><img style="width:20px;max-height:24px" src="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/Sebasti%C3%A0%20Gasch/IMG_5869.jpg" alt="IMG_5869.JPG"/></a></span></td><td class="cell-B&gt;Qq"></td></tr><tr id="2404fb39-fe42-4a5b-ab28-e09d6783a371"><td class="cell-title"><a href="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/Josep%20Maria%20de%20Mart%C3%ADn%202404fb39fe424a5bab28e09d6783a371.html">Josep Maria de Martín</a></td><td class="cell-kOCO">José M de Martín</td><td class="cell-n?j:">1958</td><td class="cell-?HyX">La Jirafa</td><td class="cell-U?h_"><span class="selected-value select-value-color-pink">Premsa</span></td><td class="cell-wp[H">Autorretrat literari</td><td class="cell-STAj"><span style="margin-inline-end:6px"><a href="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/Josep%20Maria%20de%20Mart%C3%ADn/2-2-a_autorretrat_(literari_i_grafic)__la_Jirafa_copia.jpg"><img style="width:20px;max-height:24px" src="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/Josep%20Maria%20de%20Mart%C3%ADn/2-2-a_autorretrat_(literari_i_grafic)__la_Jirafa_copia.jpg" alt="2-2-a autorretrat (literari i grafic) _la Jirafa còpia.jpg"/></a></span></td><td class="cell-B&gt;Qq"></td></tr><tr id="8d132b67-1320-48c7-a52c-9d5b937f7707"><td class="cell-title"><a href="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/Juan%20Eduardo%20Cirlot%208d132b67132048c7a52c9d5b937f7707.html">Juan Eduardo Cirlot</a></td><td class="cell-kOCO">Pintura catalana contemporánea</td><td class="cell-n?j:">1961</td><td class="cell-?HyX">1961. Ediciones Alfa y Omega p. 43</td><td class="cell-U?h_"><span class="selected-value select-value-color-green">Llibre</span></td><td class="cell-wp[H"></td><td class="cell-STAj"><span style="margin-inline-end:6px"><a href="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/Juan%20Eduardo%20Cirlot/IMG_1450.jpeg"><img style="width:20px;max-height:24px" src="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/Juan%20Eduardo%20Cirlot/IMG_1450.jpeg" alt="IMG_1450.jpeg"/></a></span></td><td class="cell-B&gt;Qq"></td></tr><tr id="96a40c0b-bd08-46ad-a1ae-b1a8720b8858"><td class="cell-title"><a href="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/Ren%C3%A9e%20Carvalho%2096a40c0bbd0846ada1aeb1a8720b8858.html">Renée Carvalho</a></td><td class="cell-kOCO">Artistes catalans contemporains</td><td class="cell-n?j:">1963</td><td class="cell-?HyX">Editions de la revue moderne, 1963, p. 36-37</td><td class="cell-U?h_"><span class="selected-value select-value-color-green">Llibre</span></td><td class="cell-wp[H"></td><td class="cell-STAj"><span style="margin-inline-end:6px"><a href="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/Ren%C3%A9e%20Carvalho/IMG_0136.jpg"><img style="width:20px;max-height:24px" src="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/Ren%C3%A9e%20Carvalho/IMG_0136.jpg" alt="IMG_0136.jpg"/></a></span><span style="margin-inline-end:6px"><a href="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/Ren%C3%A9e%20Carvalho/IMG_0135.jpg"><img style="width:20px;max-height:24px" src="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/Ren%C3%A9e%20Carvalho/IMG_0135.jpg" alt="IMG_0135.jpg"/></a></span></td><td class="cell-B&gt;Qq"></td></tr><tr id="9f9e3611-1d52-4876-96af-71e06363b57b"><td class="cell-title"><a href="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/Vicente%20Aguilera%20Cerni%209f9e36111d52487696af71e06363b57b.html">Vicente Aguilera Cerni</a></td><td class="cell-kOCO"></td><td class="cell-n?j:">1966</td><td class="cell-?HyX"></td><td class="cell-U?h_"></td><td class="cell-wp[H">Ediciones Guadarrama, 1966. P.134</td><td class="cell-STAj"><span style="margin-inline-end:6px"><a href="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/Vicente%20Aguilera%20Cerni/IMG_1452.jpeg"><img style="width:20px;max-height:24px" src="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/Vicente%20Aguilera%20Cerni/IMG_1452.jpeg" alt="IMG_1452.jpeg"/></a></span></td><td class="cell-B&gt;Qq"></td></tr><tr id="3585471e-bc5e-4261-ae94-cc6eda9fd696"><td class="cell-title"><a href="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/-%203585471ebc5e4261ae94cc6eda9fd696.html">-</a></td><td class="cell-kOCO">Prensa bergadana</td><td class="cell-n?j:">1971/7/16</td><td class="cell-?HyX">Diario de Barcelona</td><td class="cell-U?h_"><span class="selected-value select-value-color-pink">Premsa</span></td><td class="cell-wp[H">ressenya a l’aparició del volum La prensa periódica Bergadana</td><td class="cell-STAj"><span style="margin-inline-end:6px"><a href="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/-/Captura_de_Pantalla_2024-02-04_a_les_18.22.21.png"><img style="width:20px;max-height:24px" src="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/-/Captura_de_Pantalla_2024-02-04_a_les_18.22.21.png" alt="Captura de Pantalla 2024-02-04 a les 18.22.21.png"/></a></span></td><td class="cell-B&gt;Qq"></td></tr><tr id="60517ff4-4be5-44c3-ba06-4b0a3195a82b"><td class="cell-title"><a href="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/Juan%20Ignacio%20de%20Blas%2060517ff44be544c3ba064b0a3195a82b.html">Juan Ignacio de Blas</a></td><td class="cell-kOCO">Pintores españoles contemporáneos</td><td class="cell-n?j:">1972</td><td class="cell-?HyX">Estiarte ediciones, 1972, p. 142</td><td class="cell-U?h_"><span class="selected-value select-value-color-green">Llibre</span></td><td class="cell-wp[H"></td><td class="cell-STAj"><span style="margin-inline-end:6px"><a href="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/Juan%20Ignacio%20de%20Blas/IMG_1451.jpeg"><img style="width:20px;max-height:24px" src="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/Juan%20Ignacio%20de%20Blas/IMG_1451.jpeg" alt="IMG_1451.jpeg"/></a></span></td><td class="cell-B&gt;Qq"></td></tr><tr id="ad28cb07-054b-42c2-af62-81a7566fcd5f"><td class="cell-title"><a href="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/Jordi%20Puntas%20ad28cb07054b42c2af6281a7566fcd5f.html">Jordi Puntas</a></td><td class="cell-kOCO">Josep Maria de MArtín o el sentiment intel·lectualitzat</td><td class="cell-n?j:">1983/3/13</td><td class="cell-?HyX">Regió7 Dominical</td><td class="cell-U?h_"><span class="selected-value select-value-color-purple">Entrevista</span><span class="selected-value select-value-color-pink">Premsa</span></td><td class="cell-wp[H">Entrevista de Jordi Puntas</td><td class="cell-STAj"><span style="margin-inline-end:6px"><a href="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/Jordi%20Puntas/IMG_4261.jpg"><img style="width:20px;max-height:24px" src="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/Jordi%20Puntas/IMG_4261.jpg" alt="IMG_4261.JPG"/></a></span><span style="margin-inline-end:6px"><a href="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/Jordi%20Puntas/IMG_4260.jpg"><img style="width:20px;max-height:24px" src="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/Jordi%20Puntas/IMG_4260.jpg" alt="IMG_4260.JPG"/></a></span></td><td class="cell-B&gt;Qq"></td></tr><tr id="360ae551-eb42-4a24-b36e-89b57ea9831a"><td class="cell-title"><a href="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/Joan%20Perucho%20360ae551eb424a24b36e89b57ea9831a.html">Joan Perucho</a></td><td class="cell-kOCO">Josep M. de Martín</td><td class="cell-n?j:">1985/12/29</td><td class="cell-?HyX">Avui</td><td class="cell-U?h_"><span class="selected-value select-value-color-pink">Premsa</span></td><td class="cell-wp[H"></td><td class="cell-STAj"><span style="margin-inline-end:6px"><a href="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/Joan%20Perucho/avui_29121985_perucho.pdf">avui 29:12:1985 perucho.pdf</a></span></td><td class="cell-B&gt;Qq"></td></tr><tr id="c84a6944-8210-4452-9a40-bf245a586572"><td class="cell-title"><a href="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/Joan%20Perucho%20c84a6944821044529a40bf245a586572.html">Joan Perucho</a></td><td class="cell-kOCO">Josep Maria de Martín</td><td class="cell-n?j:">1991/7/13</td><td class="cell-?HyX">Avui</td><td class="cell-U?h_"><span class="selected-value select-value-color-pink">Premsa</span></td><td class="cell-wp[H"></td><td class="cell-STAj"><span style="margin-inline-end:6px"><a href="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/Joan%20Perucho%20c84a-6572/avui_joan_perucho.pdf">avui joan perucho.pdf</a></span></td><td class="cell-B&gt;Qq"></td></tr><tr id="28194b1d-fa85-40b3-9d35-24540cc5d499"><td class="cell-title"><a href="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/S%C3%ADlvia%20Rodr%C3%ADguez%2028194b1dfa8540b39d3524540cc5d499.html">Sílvia Rodríguez</a></td><td class="cell-kOCO">L’elegància callada de tot un senyor</td><td class="cell-n?j:">1993/1/3</td><td class="cell-?HyX">Regió 7 /Cultures</td><td class="cell-U?h_"><span class="selected-value select-value-color-purple">Entrevista</span><span class="selected-value select-value-color-pink">Premsa</span></td><td class="cell-wp[H"></td><td class="cell-STAj"><span style="margin-inline-end:6px"><a href="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/S%C3%ADlvia%20Rodr%C3%ADguez/IMG_4262.jpg"><img style="width:20px;max-height:24px" src="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/S%C3%ADlvia%20Rodr%C3%ADguez/IMG_4262.jpg" alt="IMG_4262.JPG"/></a></span></td><td class="cell-B&gt;Qq"></td></tr><tr id="cb3de388-58eb-4de2-ab27-ba8cef64290c"><td class="cell-title"><a href="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/Joan%20Perucho%20cb3de38858eb4de2ab27ba8cef64290c.html">Joan Perucho</a></td><td class="cell-kOCO">Lluís M. Aragó: A l’altra banda del mirall</td><td class="cell-n?j:">1994/6/4</td><td class="cell-?HyX">Avui</td><td class="cell-U?h_"><span class="selected-value select-value-color-pink">Premsa</span></td><td class="cell-wp[H">Necrològica de Lluís M. Aragó, en la que Martín hi és citat profusament.</td><td class="cell-STAj"><span style="margin-inline-end:6px"><a href="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/Joan%20Perucho%20cb3d-290c/avui_741994_perucho.pdf">avui 7:4:1994 perucho.pdf</a></span></td><td class="cell-B&gt;Qq"></td></tr><tr id="c72c1e99-29ac-454c-85ba-77faa2a60a84"><td class="cell-title"><a href="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/Carn%20Magra%20(Jaume%20Capdevila%20Guillem%20Escriche%20Roger%20c72c1e9929ac454c85ba77faa2a60a84.html">Carn Magra (Jaume Capdevila / Guillem Escriche / Roger Escriche)</a></td><td class="cell-kOCO">Interviu amb Josep Maria de Martín</td><td class="cell-n?j:">1996/6/1</td><td class="cell-?HyX">Escudella i Carn d’Olla</td><td class="cell-U?h_"><span class="selected-value select-value-color-purple">Entrevista</span><span class="selected-value select-value-color-pink">Premsa</span></td><td class="cell-wp[H"></td><td class="cell-STAj"></td><td class="cell-B&gt;Qq"></td></tr><tr id="ce06ba49-f768-4a54-93bc-6179a22ed826"><td class="cell-title"><a href="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/S%C3%ADlvia%20Culell%20ce06ba49f7684a5493bc6179a22ed826.html">Sílvia Culell</a></td><td class="cell-kOCO">L’home més enlla de l’artista</td><td class="cell-n?j:">2000/3/25</td><td class="cell-?HyX">L’Erol</td><td class="cell-U?h_"><span class="selected-value select-value-color-purple">Entrevista</span><span class="selected-value select-value-color-pink">Premsa</span></td><td class="cell-wp[H">Entrevista. Reproduïda al catàleg Passió Intel·lectual</td><td class="cell-STAj"><span style="margin-inline-end:6px"><a href="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/S%C3%ADlvia%20Culell/172794-Text_de_larticle-250974-1-10-20100525_(1).pdf">172794-Text de l&#x27;article-250974-1-10-20100525 (1).pdf</a></span></td><td class="cell-B&gt;Qq"></td></tr><tr id="042ef6c7-fb37-4583-b933-8c7840927aca"><td class="cell-title"><a href="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/Quirze%20Grifell%20042ef6c7fb374583b9338c7840927aca.html">Quirze Grifell</a></td><td class="cell-kOCO">Josep Maria de Martín Artista Total</td><td class="cell-n?j:">2000/3/25</td><td class="cell-?HyX">L’Erol</td><td class="cell-U?h_"><span class="selected-value select-value-color-pink">Premsa</span></td><td class="cell-wp[H"></td><td class="cell-STAj"><span style="margin-inline-end:6px"><a href="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/Quirze%20Grifell/172791-Text_de_larticle-250966-1-10-20100525.pdf">172791-Text de l&#x27;article-250966-1-10-20100525.pdf</a></span></td><td class="cell-B&gt;Qq"></td></tr><tr id="aa152737-f46b-4a64-8fa6-2628a7b6dd66"><td class="cell-title"><a href="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/Joan%20Ferrer%20aa152737f46b4a648fa62628a7b6dd66.html">Joan Ferrer</a></td><td class="cell-kOCO">Sobre la pintura de Josep Maria de Martín</td><td class="cell-n?j:">2000/3/25</td><td class="cell-?HyX">L’Erol</td><td class="cell-U?h_"><span class="selected-value select-value-color-pink">Premsa</span></td><td class="cell-wp[H"></td><td class="cell-STAj"><span style="margin-inline-end:6px"><a href="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/Joan%20Ferrer/172792-Text_de_larticle-250968-1-10-20100525.pdf">172792-Text de l&#x27;article-250968-1-10-20100525.pdf</a></span></td><td class="cell-B&gt;Qq"></td></tr><tr id="a2291b5d-2e93-4b53-b7b8-b9ac6c560273"><td class="cell-title"><a href="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/Josep%20Carreras%20a2291b5d2e934b53b7b8b9ac6c560273.html">Josep Carreras</a></td><td class="cell-kOCO">Passat, present i història en l’exposició antològica de Josep Maria de Martín</td><td class="cell-n?j:">2000/3/25</td><td class="cell-?HyX">L’Erol</td><td class="cell-U?h_"><span class="selected-value select-value-color-pink">Premsa</span></td><td class="cell-wp[H"></td><td class="cell-STAj"><span style="margin-inline-end:6px"><a href="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/Josep%20Carreras/172793-Text_de_larticle-250971-1-10-20100525.pdf">172793-Text de l&#x27;article-250971-1-10-20100525.pdf</a></span></td><td class="cell-B&gt;Qq"></td></tr><tr id="0f3a5edf-389f-41de-b9fb-02c4df176aab"><td class="cell-title"><a href="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/Joan%20Perucho%200f3a5edf389f41deb9fb02c4df176aab.html">Joan Perucho</a></td><td class="cell-kOCO">Josep Maria de Martín</td><td class="cell-n?j:">2000/12/27</td><td class="cell-?HyX">Avui</td><td class="cell-U?h_"><span class="selected-value select-value-color-pink">Premsa</span></td><td class="cell-wp[H"></td><td class="cell-STAj"><span style="margin-inline-end:6px"><a href="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/Joan%20Perucho%200f3a-6aab/avui_27122000_perucho.pdf">avui 27:12:2000 perucho.pdf</a></span></td><td class="cell-B&gt;Qq"></td></tr><tr id="c5dac548-59c9-4a10-ace8-296a5d4ee05c"><td class="cell-title"><a href="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/Mireia%20Rosich;%20Bernat%20Puigdollers%20i%20S%C3%ADlvia%20Mu%C3%B1oz%20d%20c5dac54859c94a10ace8296a5d4ee05c.html">Mireia Rosich; Bernat Puigdollers i Sílvia Muñoz d’Imbert</a></td><td class="cell-kOCO">Biblioteca Museu Vícot Balaguer. Dossier de premsa<br/>1960 -1963: El Museu d’Art Contemporani. ontemporani. ontemporani.<br/>Testimoni d’una època Testimoni d’una època</td><td class="cell-n?j:">2015/7/13</td><td class="cell-?HyX"></td><td class="cell-U?h_"><span class="selected-value select-value-color-green">Llibre</span></td><td class="cell-wp[H"> “pintura geometritzant, de cànon colossal, de figures compactes i<br/>colors vellutats de José Maria de Martín”</td><td class="cell-STAj"><span style="margin-inline-end:6px"><a href="https://www.vilanova.cat/doc/doc_26089817_1.pdf">https://www.vilanova.cat/doc/doc_26089817_1.pdf</a></span></td><td class="cell-B&gt;Qq"></td></tr><tr id="c967b01a-f2af-497d-a029-f10c5b682fa2"><td class="cell-title"><a href="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/Alex%20Catas%C3%BAs,%20Bernat%20Puigdollers%20c967b01af2af497da029f10c5b682fa2.html">Alex Catasús, Bernat Puigdollers</a></td><td class="cell-kOCO">Art i cultura de postguerra. Barcelona, 1939-1962</td><td class="cell-n?j:">2018</td><td class="cell-?HyX">Àmbit</td><td class="cell-U?h_"><span class="selected-value select-value-color-green">Llibre</span></td><td class="cell-wp[H"></td><td class="cell-STAj"><span style="margin-inline-end:6px"><a href="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/Alex%20Catas%C3%BAs,%20Bernat%20Puigdollers/Captura_de_pantalla_2024-05-07_a_les_23.12.36.png"><img style="width:20px;max-height:24px" src="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/Alex%20Catas%C3%BAs,%20Bernat%20Puigdollers/Captura_de_pantalla_2024-05-07_a_les_23.12.36.png" alt="Captura de pantalla 2024-05-07 a les 23.12.36.png"/></a></span></td><td class="cell-B&gt;Qq"></td></tr><tr id="535bdb0a-fd90-4331-a0e9-5d2f2c268598"><td class="cell-title"><a href="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/Jaume%20Capdevila;%20Salvador%20Vinyes%20535bdb0afd904331a0e95d2f2c268598.html">Jaume Capdevila; Salvador Vinyes</a></td><td class="cell-kOCO">Josep Maria de Martín. Passió intel·lectual</td><td class="cell-n?j:">2022/11/01</td><td class="cell-?HyX">Catàleg exposició</td><td class="cell-U?h_"><span class="selected-value select-value-color-green">Llibre</span></td><td class="cell-wp[H"></td><td class="cell-STAj"><span style="margin-inline-end:6px"><a href="https://www.dropbox.com/scl/fi/hl6dq5i78g5aakjsl3vmi/cataleg-JMDM.pdf?rlkey=53qfts0mfpcjvmzzvlhrk5zj9&amp;dl=0">https://www.dropbox.com/scl/fi/hl6dq5i78g5aakjsl3vmi/cataleg-JMDM.pdf?rlkey=53qfts0mfpcjvmzzvlhrk5zj9&amp;dl=0</a></span></td><td class="cell-B&gt;Qq"></td></tr><tr id="fc11f847-d440-4d7f-8969-2d81aa89539a"><td class="cell-title"><a href="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/Enric%20Blanes%20fc11f847d4404d7f89692d81aa89539a.html">Enric Blanes</a></td><td class="cell-kOCO">Josep Maria de Martín</td><td class="cell-n?j:">2022/12/22</td><td class="cell-?HyX">Blog</td><td class="cell-U?h_"><span class="selected-value select-value-color-yellow">Internet</span></td><td class="cell-wp[H"></td><td class="cell-STAj"><span style="margin-inline-end:6px"><a href="https://gferrater.blogspot.com/2023/01/josep-maria-de-martin.html">https://gferrater.blogspot.com/2023/01/josep-maria-de-martin.html</a></span></td><td class="cell-B&gt;Qq"></td></tr><tr id="6e896fc9-ae84-4080-a6b1-43283b4c60be"><td class="cell-title"><a href="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/Jordi%20Amat%206e896fc9ae844080a6b143283b4c60be.html">Jordi Amat</a></td><td class="cell-kOCO">Un spin-off de l’any Ferrater: el redescobriment de Josep Maria de Martín</td><td class="cell-n?j:">2022/12/30</td><td class="cell-?HyX">Quadern. El País</td><td class="cell-U?h_"><span class="selected-value select-value-color-pink">Premsa</span></td><td class="cell-wp[H"></td><td class="cell-STAj"><span style="margin-inline-end:6px"><a href="https://elpais.com/quadern/2022-12-30/un-spin-off-de-lany-ferrater-el-redescobriment-de-josep-maria-de-martin.html">https://elpais.com/quadern/2022-12-30/un-spin-off-de-lany-ferrater-el-redescobriment-de-josep-maria-de-martin.html</a></span></td><td class="cell-B&gt;Qq"></td></tr><tr id="1b1d1d51-046d-8087-89c6-eb6d7199fc23"><td class="cell-title"><a href="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/Maria%20Moreno%20Viladrich%201b1d1d51046d808789c6eb6d7199fc23.html">Maria Moreno Viladrich</a></td><td class="cell-kOCO">El seriós que riu o la mesura de les coses ben fetes.</td><td class="cell-n?j:">2023/01/05</td><td class="cell-?HyX">Núvol</td><td class="cell-U?h_"><span class="selected-value select-value-color-pink">Premsa</span></td><td class="cell-wp[H">Ressenya de l’exposició 2022</td><td class="cell-STAj"><span style="margin-inline-end:6px"><a href="https://www.nuvol.com/art/el-serios-que-riu-o-la-mesura-de-les-coses-ben-fetes-297872">https://www.nuvol.com/art/el-serios-que-riu-o-la-mesura-de-les-coses-ben-fetes-297872</a></span></td><td class="cell-B&gt;Qq"></td></tr><tr id="ba3b79c8-6547-4a11-a326-c9b18a7c5e5a"><td class="cell-title"><a href="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/Redacci%C3%B3%20ba3b79c865474a11a326c9b18a7c5e5a.html">Redacció</a></td><td class="cell-kOCO">Josep Maria de Marín: Passió intel·lectual.</td><td class="cell-n?j:">2023/12/30</td><td class="cell-?HyX">L’Erol</td><td class="cell-U?h_"><span class="selected-value select-value-color-pink">Premsa</span></td><td class="cell-wp[H">Ressenya de l’exposició Berga 2022</td><td class="cell-STAj"><span style="margin-inline-end:6px"><a href="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/Redacci%C3%B3/412113-Text_de_larticle-603010-1-10-20230130.pdf">412113-Text de l&#x27;article-603010-1-10-20230130.pdf</a></span></td><td class="cell-B&gt;Qq"><span style="margin-inline-end:6px"><a href="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/Redacci%C3%B3/412113-Text_de_larticle-603010-1-10-20230130%201.pdf">412113-Text de l&#x27;article-603010-1-10-20230130.pdf</a></span></td></tr><tr id="1b5d1d51-046d-80f1-8cdf-ff95ee7486c0"><td class="cell-title"><a href="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/Custodio%20Lopas%201b5d1d51046d80f18cdfff95ee7486c0.html">Custodio Lopas</a></td><td class="cell-kOCO">La letra maldita y otros ensayos</td><td class="cell-n?j:">2024</td><td class="cell-?HyX">La letra maldita y otros ensayos. Rara Avis. </td><td class="cell-U?h_"><span class="selected-value select-value-color-green">Llibre</span></td><td class="cell-wp[H"></td><td class="cell-STAj"></td><td class="cell-B&gt;Qq"></td></tr><tr id="ecb0b74b-affb-461c-a7cb-6d4f00416bba"><td class="cell-title"><a href="J%20M%20de%20Mart%C3%ADn%20Refer%C3%A8ncies,%20publicacions,%20dades/Jaume%20Capdevila%20ecb0b74baffb461ca7cb6d4f00416bba.html">Jaume Capdevila</a></td><td class="cell-kOCO">Ninots carlins de Josep Maria de Martín.</td><td class="cell-n?j:">2024/5/4</td><td class="cell-?HyX">VIII Simposi d’història del carlisme. Avià, 2024</td><td class="cell-U?h_"><span class="selected-value select-value-color-green">Llibre</span></td><td class="cell-wp[H"></td><td class="cell-STAj"></td><td class="cell-B&gt;Qq"></td></tr></tbody></table></div><br/><br/></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>

@@ -1,0 +1,752 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>J. M. de Martin. Pistes</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+/* Override strong tags inside headings to maintain consistent weight */
+h1 strong,
+h2 strong,
+h3 strong {
+	font-weight: 600;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 10px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+
+	table.collection-content {
+		width: 100%;
+		table-layout: fixed;
+	}
+
+	table.collection-content th,
+	table.collection-content td {
+		overflow-wrap: anywhere;
+	}
+
+	table.collection-content td > .user,
+	table.collection-content td > time {
+		white-space: pre-wrap;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content-wrapper {
+	overflow-x: auto;
+}
+
+@media only print {
+	.collection-content-wrapper {
+		overflow-x: visible;
+	}
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.collection-content td {
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+.column-list {
+	display: flex;
+	gap: 46px;
+}
+
+.column {
+	min-width: 0;
+	overflow: hidden;
+}
+
+.column > *:first-child {
+	margin-top: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+table {
+	border-collapse: collapse;
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol.numbered-list.numbered-list-digits-2 {
+	padding-inline-start: 2em;
+}
+
+ol.numbered-list.numbered-list-digits-3plus {
+	padding-inline-start: 2.4em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.callout img.notion-static-icon {
+	width: 1em;
+	height: 1em;
+}
+
+.callout p {
+	margin: 0;
+}
+
+.callout h1,
+.callout h2,
+.callout h3 {
+	margin: 0 0 0.6rem;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+blockquote.quote-large {
+	font-size: 1.25em;
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.highlight-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.highlight-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.highlight-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.highlight-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.highlight-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.highlight-default_background {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray_background {
+	background: rgba(42, 28, 0, 0.07);
+}
+.highlight-brown_background {
+	background: rgba(139, 46, 0, 0.086);
+}
+.highlight-orange_background {
+	background: rgba(224, 101, 1, 0.129);
+}
+.highlight-yellow_background {
+	background: rgba(211, 168, 0, 0.137);
+}
+.highlight-teal_background {
+	background: rgba(0, 100, 45, 0.09);
+}
+.highlight-blue_background {
+	background: rgba(0, 124, 215, 0.094);
+}
+.highlight-purple_background {
+	background: rgba(102, 0, 178, 0.078);
+}
+.highlight-pink_background {
+	background: rgba(197, 0, 93, 0.086);
+}
+.highlight-red_background {
+	background: rgba(223, 22, 0, 0.094);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.block-color-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.block-color-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.block-color-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.block-color-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.block-color-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(240, 239, 237, 1);
+}
+.block-color-brown_background {
+	background: rgba(245, 237, 233, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 235, 222, 1);
+}
+.block-color-yellow_background {
+	background: rgba(249, 243, 220, 1);
+}
+.block-color-teal_background {
+	background: rgba(232, 241, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(229, 242, 252, 1);
+}
+.block-color-purple_background {
+	background: rgba(243, 235, 249, 1);
+}
+.block-color-pink_background {
+	background: rgba(250, 233, 241, 1);
+}
+.block-color-red_background {
+	background: rgba(252, 233, 231, 1);
+}
+.select-value-color-default { background-color: rgba(42, 28, 0, 0.07); }
+.select-value-color-gray { background-color: rgba(28, 19, 1, 0.11); }
+.select-value-color-brown { background-color: rgba(127, 51, 0, 0.156); }
+.select-value-color-orange { background-color: rgba(196, 88, 0, 0.203); }
+.select-value-color-yellow { background-color: rgba(209, 156, 0, 0.282); }
+.select-value-color-green { background-color: rgba(0, 96, 38, 0.156); }
+.select-value-color-blue { background-color: rgba(0, 118, 217, 0.203); }
+.select-value-color-purple { background-color: rgba(92, 0, 163, 0.141); }
+.select-value-color-pink { background-color: rgba(183, 0, 78, 0.152); }
+.select-value-color-red { background-color: rgba(206, 24, 0, 0.164); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="af881872-a58b-4d67-b90e-6d301ab7b225" class="page sans"><header><h1 class="page-title" dir="auto">J. M. de Martin. Pistes</h1><p class="page-description" dir="auto"></p></header><div class="page-body"><div style="display:contents" dir="auto"><p id="f5f1ba61-b43c-4b6d-8aa2-dc16bfe1c1a6" class="">
+</p></div><div style="display:contents" dir="auto"><p id="e1e9003b-9137-462c-a9d1-3af94656d0cb" class="">
+</p></div><div style="display:contents" dir="auto"><p id="5375477f-931b-46e0-9088-daecb429b87a" class="">
+</p></div><div style="display:contents" dir="auto"><p id="1b645d48-791e-43a2-acf4-d377a67bc173" class="">
+</p></div><div style="display:contents" dir="auto"><p id="89cb684e-89aa-4959-8d62-339f684ff9f0" class="">«En aquella època em venia<br/>a veure, així mateix, el pintor<br/>De Martín, que em portava<br/>notícies d’un grup que llavors<br/>estava con gurant-se i que es<br/>reunia al Bar Guinea –Nèstor<br/>Luján, Joan Perucho, Manuel<br/>Valls, Vilanova, etc.–, algun<br/>component del qual em va<br/>presentar més tard.»<br/><br/>Antoni Tàpies,<br/><br/><em>Memòria personal, </em>Ed. Crítica<em>, </em>1977. p. 192<em><br/></em><br/>	<br/></p></div><div style="display:contents" dir="ltr"><figure id="b323b007-6f04-4c2b-98a4-b7fd5cd08213" class="image"><a href="J%20M%20de%20Martin%20Pistes/2-2-b1_curriculum2.jpg"><img style="width:3024px" src="J%20M%20de%20Martin%20Pistes/2-2-b1_curriculum2.jpg"/></a></figure></div><div style="display:contents" dir="ltr"><figure id="5913c1a0-2f46-4b51-b9fb-2492fdce1e16" class="image"><a href="J%20M%20de%20Martin%20Pistes/2-2-b2_curriculum1_copia.jpg"><img style="width:5315px" src="J%20M%20de%20Martin%20Pistes/2-2-b2_curriculum1_copia.jpg"/></a></figure></div><div style="display:contents" dir="auto"><p id="ada5ecf5-85ff-4088-a517-efbe6d4b3100" class="">
+</p></div><div style="display:contents" dir="ltr"><figure id="fc89b0f1-94eb-44f2-8cc9-82a18f113e89" class="image"><a href="J%20M%20de%20Martin%20Pistes/IMG_4258.jpg"><img style="width:3024px" src="J%20M%20de%20Martin%20Pistes/IMG_4258.jpg"/></a></figure></div><div style="display:contents" dir="ltr"><figure id="5592fd55-deeb-40cf-8ee7-5a0797e5175c" class="image"><a href="J%20M%20de%20Martin%20Pistes/IMG_4259.jpg"><img style="width:3024px" src="J%20M%20de%20Martin%20Pistes/IMG_4259.jpg"/></a></figure></div><div style="display:contents" dir="auto"><p id="fbd11367-f237-4832-a99a-5ab81565a0ca" class="">
+</p></div><div style="display:contents" dir="auto"><p id="24c2cc9d-a6fd-4c4a-a9df-7c5e5968044b" class="">Ed Luis de Caralt</p></div><div style="display:contents" dir="auto"><p id="a7a785bf-f0b3-4272-bbcb-d3718b49efce" class="">Obras completas. Graham Greene 1958 vol. I - Caricatura portadella<br/>Obras completas. Cecil Roberts 1958 vol. I - Caricatura portadella<br/>Obras completas. John Steinbeck 1958 vol. I - Caricatura portadella<br/>Obras completas. Ayn Rand 1958 vol. I - Caricatura portadella<br/>Obras completas. Mika Waltari 1958 vol. I - Caricatura portadella / vol. II il.lustracions<br/>Obras completas. Georges Bernanos 1958 vol. I - Caricatura portadella<br/>Obras completas. Lloyd C. Douglas 1958 vol. I - Caricatura portadella<br/>Obras completas. William Faulkner 1959 vol. I - Caricatura portadella / vol. Il·lustracions<br/>Obras completas. Frank G. Slaughter 1959 vol. I - Caricatura portadella<br/>Obras completas. Laszlo Passuth 1959 vol. I - Caricatura portadella<br/>Obras completas. Virgil Gheorghiu 1960 vol. I - Caricatura portadella</p></div><div style="display:contents" dir="auto"><p id="029a2c18-c6e6-49e7-a50c-ff6177c3cb7e" class="">Obras selectas. Bruce Marshall 1958 vol. - Caricatura portadella<br/>Obras selectas. Daphne du Maurier 1958 vol. I - Caricatura portadella</p></div><div style="display:contents" dir="auto"><p id="169cf0df-de94-481f-b7f6-a90a844b957a" class="">
+</p></div><div style="display:contents" dir="auto"><p id="8017f068-b1b4-4b85-aec8-bf9c71b42eec" class="">El látigo de la ira. Marek Hlasko. – C<br/>Vivimos de noche. Luciano Castañón. - C<br/>Días juveniles. Bruce Marshall. - C i S<br/>El velo de la Verónica. Frank G. - Portadella<br/>La casa del té de la luna de agosto - Portadella</p></div><div style="display:contents" dir="auto"><p id="1c8d1d51-046d-804c-ac32-eba6b7d2a360" class="">La casa de los diez mil plceres. Sara Harris - Portadella<br/>El diablo a las 4. Catto - Coberta<br/>La playa profanada. O&#x27;Donell - Coberta<br/>Los sacrificados del Danubio. C. V. Gheorghiu - Sobrecoberta<br/>Billy el niño. Corle - Portadella<br/>El mundo, la carne y el padre Smith - Coberta<br/>Una lápida para Danny - Coberta<br/>Cimarron. Edna Ferber - C<br/>Dos vivos y un muerto - C<br/>La Barina. Henry Troyal - C<br/>Los profanadores del amor - C<br/>Las nieves de diciembre. Daria Olivier - S<br/>Las uñas del miedo. J. M. Castllo Navarro - S i P *<br/>Caridad la negra. J. M. Castllo Navarro - C, S i P *<br/>El Hombre a la busca de sus - C<br/>Anatomía de un asesinato - C<br/>Lorena. Frank G. Slauchter - C<br/>Los insaciables. Harold - C<br/>El caballero de la esmeralda - C<br/>Sangre extraña. Michail - C *<br/>La puerta del paraíso. Cecil Roberts - P<br/>El pueblo de la montaña<br/>La túnica de piel. C. Virgil - P *<br/>Los últimos cien días - C *<br/>Contrata de héroes. C. V. Gheorghiu - S<br/>Fué dicho: no desearás a la mujer - C<br/>La paga de los soldados. W. Faulkner - C *<br/>Hasta que la muerte nos separe. Pearl S. Buck - C<br/>La luz del sueño. Carlo occioli - C<br/>Nuevos episodios secretos de la historia. A. Decaux - C<br/>Trapecio. M. Catto. - C i S *<br/>Amor sin barreras. Irving Shulman - C<br/>A la deriva en el Soho. Colin - C<br/>Romance en italia - C<br/>Una chica de Lubeck. B. Marshall - C i P<br/>El látigo. M. Hlasko - C<br/>Las ataduras del diablo. D. Manfredi - C *<br/>Mamba. Stuart Cloete. - C<br/>Hortensia. Cecil Saint Laurent - C *<br/>A la deriva. Colin Wilson - C *<br/>Los escritores. Michel de Saint Pierre - C *<br/>Juan el negro. D. Manfredi - C *<br/>La piedra. D. Manfredi - C<br/>Cenizas y diamantes. Jerzy - C<br/>La playa profanada. Eugene O&#x27;Donell - C i P<br/>Morir o reventar. James Jones - C i P<br/>La inquisicion. Pierre Dominique - C<br/>La espada y el bisturí. Frank G. Slaughter - S<br/>El oscuro rebaño. Duilio Riccardi - C<br/>Los nuevos curas. Michel de Saint Pierre - C<br/>Los nuevos aristocratas. Michel de Saint Pierre - C<br/>Esposas de médicos. Frank G. Slaughter - C<br/>Bonnie y Clide . Burt Hirschfeld. - C<br/>Soldados vírgenes. Leslie Thomas - C<br/>La caída. Thomas Mann - C<br/>El ómnibus perdido. John Steimbeck - C<br/>Fuga al Edén. Theodore Pratt. - C<br/>La calle de las pagodas animadas. Maria Von Kirchbach - C i P<br/>Los invictos. William Faulkner - C<br/>El agente confidencial. Graham Greene. - C<br/>Una tragedia americana. Theodore Dreiser - C<br/>A bordo de una isla. Domingo Manfredi - S i C<br/>El carro de los elegidos. Patrick White - C i P<br/>Parque de atracciones. Graham Greene - C<br/>La ventana de los Rouet. Georges Simenon. - C i P<br/>El otro curso. Xavier Adro. - C<br/>Tierra ignota. Patrick White. - C<br/>La paz dura quince días. Rafael García Serrano. - S, C i P *<br/>El santito. Georges Simenon. - C<br/>La brigada de los malditos - C<br/>Estación victoria a las 4,30 - C<br/>División Brandeburgo. Will Berthold - C i P<br/>Las montañas permanecen. Hanama Tasaki - S<br/>Frutas silvestres como postres. H. G. Konsalik - C i P<br/>El peso de Dios. Gilles Marcotte. - C<br/>Zly. Leopold Tyrmand. - C i P<br/>Médicos de cámara y dolencias reales. Wilhelm Treue. - S i P *<br/>Los compañeros de la amapola. Henry troyat C i P<br/>Extranjeros sobre la tierra. Henry Troyat. - C<br/>Harlow. Una biografía íntima. Irving Shulman. - C<br/>La rosa de oro. Laszlo Passuth. - S *<br/>Somos utopía. Stefan Andres. - C<br/>El cirujano. Frank G. Slaughter. - C<br/>El último gran amor. Pearl S. Buck - C<br/>La jaula de cristal. Colin Wilson - C<br/>Aventura en Moscu. Cecil Roberts - C<br/>Adiós a las armas. Ernest Hemingway - C<br/>La rebelión de Atlas. Ayn Rand - C<br/>Cuando el cielo estalla en llamas. Karl Bartz. - P<br/>En el umbral del reino. Gerard Avelane. C i P<br/>La sal viste luto. José M. Castllo Navarro - C i P<br/>El hombre que mató almrey. Dennis Wheatley - C<br/>Atención: Hombres K! Cajus Bekker - P<br/>Atormentada tierra. John Steinbeck - C<br/>Vida en la cumbre. John Braine - C<br/>Las víctimas. Georges Bernanos - C<br/>El coronel. Josef Mackiewicz - C<br/>El hombre descubre su cuerpo. André Senet - S<br/>Esther . Nathaniel Norsen - C i P<br/>Un lugar para vivir. Miguel Buñuel - C<br/>Fuego mágico. Bertita Harding. - C<br/>Un lugar al sol. John Braine - C i P *<br/>Terciopelo negro. Xavier Herbert - C i P<br/>Corsarios de Flandes. Jan Van Dorp - C i P<br/>No amarás a un extraño. Harold Robbins - C i P</p></div><div style="display:contents" dir="auto"><p id="1c8d1d51-046d-8089-a226-c02346dd73e9" class="">Tanguy. Miguel del Castillo – C i P</p></div><div style="display:contents" dir="auto"><p id="1c8d1d51-046d-80a5-b6ed-f9aa45a71d08" class="">La túnica intacta. Dulio Riccardi – C</p></div><div style="display:contents" dir="auto"><p id="1c8d1d51-046d-80df-b9cf-c4252287c094" class="">Crepúsculo de un mundo. Franz Werfel – C</p></div><div style="display:contents" dir="auto"><p id="1c8d1d51-046d-8061-9b79-f593c97f48bc" class="">Montenegro. Milovan Djilas. – C</p></div><div style="display:contents" dir="auto"><p id="1c8d1d51-046d-805e-8790-eb7c55406b9c" class="">El sol de la muerta. Pandelis Prevelakis. – C</p></div><div style="display:contents" dir="auto"><p id="1c8d1d51-046d-80df-946f-cd9c524a79d9" class="">Juan. Cécil Saint-Laurent. – C i P</p></div><div style="display:contents" dir="auto"><p id="1c8d1d51-046d-80d3-93e9-f177fb2c67ea" class="">Relatos. Ernest Heminway. – C</p></div><div style="display:contents" dir="auto"><p id="1c8d1d51-046d-8014-b6e0-ec578f677d48" class="">Tierra trágica. Eskine Caldwell – C i P</p></div><div style="display:contents" dir="auto"><p id="1c8d1d51-046d-8082-a246-d06060948b55" class="">Recuerdos de un soldado. Guderian. – C</p></div><div style="display:contents" dir="auto"><p id="1c8d1d51-046d-8016-99ba-f2af38844a00" class="">La campaña de Rusia. Alan Clark – C</p></div><div style="display:contents" dir="auto"><p id="1c8d1d51-046d-80dd-9f4e-e07bf7167345" class="">El árbol de la vida. Ross Lockridge. –C</p></div><div style="display:contents" dir="auto"><p id="1c8d1d51-046d-8010-a4db-e7b30cd90f27" class="">Los 10 últimos días de Hitler. Gerhard Boldt. – C</p></div><div style="display:contents" dir="auto"><p id="1c8d1d51-046d-80c1-985a-ca4d2b9d9773" class="">La vida une y separa. Cecil Roberts. – C</p></div><div style="display:contents" dir="auto"><p id="1c8d1d51-046d-80a0-b356-c06c361fb280" class="">Intriga imperial. –C</p></div><div style="display:contents" dir="auto"><p id="1c8d1d51-046d-80df-86de-c4eb5f514e50" class="">Memorias. Erwin Rommel. – C</p></div><div style="display:contents" dir="auto"><p id="1c8d1d51-046d-80ee-bb24-d65afb64db52" class="">Clotilde. Cécil Saint-Laurent. – C</p></div><div style="display:contents" dir="auto"><p id="1c8d1d51-046d-80c5-b447-c838e84a311f" class="">Diario de un cura rural. George Bernanos. – C</p></div><div style="display:contents" dir="auto"><p id="1c8d1d51-046d-807a-a674-fe2cb85085cd" class="">La Mariposa. J. Cain. – C i P</p></div><div style="display:contents" dir="auto"><p id="1c8d1d51-046d-809b-81c3-cb5c2281dbe0" class="">Los rusos en Berlin. Erick Kubv. – C</p></div><div style="display:contents" dir="auto"><p id="1c8d1d51-046d-8090-bebe-d85b2b01608d" class="">Adiós a las armas. Ernst Heminway. – C</p></div><div style="display:contents" dir="auto"><p id="1c8d1d51-046d-8070-9cc1-f00c54b0f824" class="">Los cien últimos días de la República. – C</p></div><div style="display:contents" dir="auto"><p id="1c8d1d51-046d-80a6-ad49-f753b8cbfee5" class="">Las semillas del mal. Davis Grubb. – C i P</p></div><div style="display:contents" dir="auto"><p id="1c8d1d51-046d-803f-adf4-c19601013328" class="">La família Lindemann. – C i P</p></div><div style="display:contents" dir="auto"><p id="1c8d1d51-046d-80e8-a283-dca7f8618075" class="">El villorrio. Faulkner. – C</p></div><div style="display:contents" dir="auto"><p id="1c8d1d51-046d-8082-92b6-ceeb7cd09f02" class="">Como un torrente. James Jones. – C</p></div><div style="display:contents" dir="auto"><p id="1c8d1d51-046d-8048-8329-ee575af77f86" class="">Flor de luna. Jetta Carlenton. – C</p></div><div style="display:contents" dir="auto"><p id="1c8d1d51-046d-80b5-b09f-cdbc377e252a" class="">Por què perdí la guerra. Saint Paulien. – C</p></div><div style="display:contents" dir="auto"><p id="1c8d1d51-046d-8091-86b0-fbaf18dded22" class="">Los malditos. De Cézanne a Utrillo. Guilleminault. – C</p></div><div style="display:contents" dir="auto"><p id="1c8d1d51-046d-8018-a39f-c2dcfc2da595" class="">Los murmullos de Satán. Michel de Saint Pierre. – C</p></div><div style="display:contents" dir="auto"><p id="1c8d1d51-046d-804d-800a-d4a403f6c669" class="">La hija del trapero. Allan Sillitoe. – C</p></div><div style="display:contents" dir="auto"><p id="1c8d1d51-046d-8031-8702-c7b6cf706b8b" class="">Útiles después de muertos. Carlos Manuel Pellecer. – C</p></div><div style="display:contents" dir="auto"><p id="1c8d1d51-046d-8066-86e0-ca5d981e4954" class="">Mano Majra. Khushwant Singh. – C</p></div><div style="display:contents" dir="auto"><p id="1c8d1d51-046d-8056-89c9-c2a3d3130c64" class="">Una lápida para Danny Fisher. Harold Robbins. – C</p></div><div style="display:contents" dir="auto"><p id="1c8d1d51-046d-8079-8929-f35cf6e135e6" class="">Galeotes, forzados y penados. Bourdet-Pleville. – C</p></div><div style="display:contents" dir="auto"><p id="1c8d1d51-046d-8041-89d5-cc66a7ee0a0b" class="">El ejñercito soviético. Lidell Hart. – C</p></div><div style="display:contents" dir="auto"><p id="1c8d1d51-046d-80a4-9831-c2f6a6dd4820" class="">Carne paciente. Willi Heinrich. – C i P</p></div><div style="display:contents" dir="auto"><p id="1c8d1d51-046d-8064-b763-cffcaa630a4a" class="">De la piragua al jet.</p></div><div style="display:contents" dir="auto"><p id="1c8d1d51-046d-80e2-b738-e4b1dc2d53a2" class="">Historia de la galanteria. Turner. – C i P</p></div><div style="display:contents" dir="auto"><p id="1c8d1d51-046d-809f-aac2-cb71c6ce0f57" class="">Literatura y revolución. Ruhle. – C i P</p></div><div style="display:contents" dir="auto"><p id="1c8d1d51-046d-80fd-aafc-e24bedbd8673" class="">Catástrofes. – C</p></div><div style="display:contents" dir="auto"><p id="66c27a87-5b35-43a0-82cf-13324c21327e" class="">Las novelas del toreo vol. I - Llom<br/>Las novelas de la violencia - Llom<br/>Las novelas de la guerra - Llom</p></div><div style="display:contents" dir="auto"><p id="e2d58ab0-8e0a-4f92-8eec-f0e471589881" class="">
+</p></div><div style="display:contents" dir="auto"><p id="ad8dbe4e-955b-417e-b221-e9c1799f33cd" class="">
+</p></div><div style="display:contents" dir="auto"><p id="7a217bdc-49b6-4ee1-af01-09a70225d1d4" class="">Paul Klee (1879-1940) lithograph titled Burg Und Sonne </p></div><div style="display:contents" dir="ltr"><figure id="984ec921-cb2a-4a6d-a8a1-fe385992f707" class="image"><a href="J%20M%20de%20Martin%20Pistes/paul_Klee_Burg_Und_Sonne.jpeg"><img style="width:666px" src="J%20M%20de%20Martin%20Pistes/paul_Klee_Burg_Und_Sonne.jpeg"/></a></figure></div></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
